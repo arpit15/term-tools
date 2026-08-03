@@ -1,0 +1,16 @@
+[commit]
+	gpgsign = true
+[alias]
+	co = checkout
+	br = branch
+	ci = commit -m
+	st = status
+	unstage = reset HEAD --
+	pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	format = ssh
