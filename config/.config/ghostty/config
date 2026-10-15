@@ -1,0 +1,13 @@
+# Readable font for long Claude output
+font-family = JetBrains Mono
+font-size = 15
+# Extra line spacing helps dense text
+adjust-cell-height = 20%
+# Slightly bolder strokes make small symbols (∑ ∫ ≤ ≠ ∈) easier to tell apart
+font-thicken = true
+# Draw Greek letters (α β γ Σ Ω ...) with Menlo, whose Greek glyphs are larger
+font-codepoint-map = U+0370-U+03FF=Menlo
+# Math operators (∑ ∫ ∈ ≤ ≠), arrows, and supplemental operators
+font-codepoint-map = U+2200-U+22FF=Menlo
+font-codepoint-map = U+2190-U+21FF=Menlo
+font-codepoint-map = U+2A00-U+2AFF=Menlo
